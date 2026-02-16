@@ -6,6 +6,7 @@ from typing import List
 
 import pprint
 
+#схема для зон
 class Zone(BaseModel):
     id: UUID
     park_id: UUID
@@ -22,6 +23,7 @@ class Zone(BaseModel):
             raise ValueError('поле total должно быть больше чем поле free')
         return self
 
+#схема для парковок
 class ParkingLot(BaseModel):
     id: UUID 
     name: str
